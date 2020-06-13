@@ -4,36 +4,41 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<link href="./styles/style.css" type="text/css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
 		<title>Frontend Mentor | Fylo data storage component</title>
 	</head>
 
 	<body>
 		<header>
-			<img class="logo" src="./images/logo.svg">
+			<div class="logo-container">
+				<img class="logo" src="./images/logo.svg">
+			</div>
 			<div class="icon-container">
-				<img class="icon-document" src="./images/icon-document.svg">
-				<img class="icon-folder" src="./images/icon-folder.svg">
-				<img class="icon-upload" src="./images/icon-upload.svg">
+				<div class="icon"><img src="./images/icon-document.svg"></div>
+				<div class="icon"><img src="./images/icon-folder.svg"></div>
+				<div class="icon"><img src="./images/icon-upload.svg"></div>
 			</div>
 		</header>
 		
-		<main>
-			<p class="storage-info">
-				You’ve used <span class="bold-text">815 GB</span> of your storage
-			</p>
-			
-			<div class="storage-bar">
-				<div class="bar"></div>
-				<div class="empty">0 GB</div>
-				<div class="full">1000 GB</div>
+		<main> 
+			<div class="storage-container">
+				<p class="storage-info">
+					You’ve used <span class="bold-text">815 GB</span> of your storage
+				</p>			
+				<div class="storage-bar">
+					<div class="storage-bar-back">
+						<div class="storage-bar-front"></div>
+					</div>
+				</div>
+				<div class="storage-empty">0 GB</div>
+				<div class="storage-full">1000 GB</div>		
 			</div>
-			
-			<div class="storage-gb-left">
-				<div class="gb-left"><span class="gb-left-bold">185</span> GB Left</div>
+			<div class="gb-left">
+				<span class="gb-left-big">185</span> 
+				<span class="gb-left-small">GB LEFT</span>
 			</div>
-			
-
-		</main
+		</main>
 		
 		<footer class="attribution">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
